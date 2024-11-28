@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그램 시간 제한</title>
+    <link href="./dist/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 h-screen flex flex-col justify-center items-center">
+    <div class="p-6 bg-white shadow-lg rounded-lg">
+        <h1 class="text-2xl font-bold mb-4">프로그램 시간 제한</h1>
+
+        <label class="block mb-2 text-gray-700">실행 중인 프로그램:</label>
+        <select id="program-select" class="block w-full p-2 border rounded mb-4">
+            <option value="">프로그램을 선택하세요</option>
+        </select>
+
+        <label class="block mb-2 text-gray-700">제한 시간 (분):</label>
+        <input id="time-limit" type="number" class="block w-full p-2 border rounded mb-4" placeholder="예: 30">
+
+        <button id="start-button" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+            제한 시작
+        </button>
+    </div>
+    <script src="./renderer.js"></script>
+</body>
+</html>
